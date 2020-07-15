@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "search.exclude": {
+    "**/build": true,
+    "**/coverage": true,
+    "**/dist": true
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.smoothScrolling": true,
+  "editor.rulers": [80],
+"workbench.colorTheme": "Night Owl",
+"editor.tabSize": 2
+}
