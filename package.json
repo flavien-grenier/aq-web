@@ -18,8 +18,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "is-ci \"test:coverage\" \"test:watch\"",
+    "test:watch": "react-scripts test",
+    "test:coverage": "react-scripts test --watchAll=false --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +36,26 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "is-ci": "^2.0.0",
+    "is-ci-cli": "^2.1.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "!**/node_modules/**",
+      "!<rootDir>/src/serviceWorker*",
+      "!<rootDir>/src/react-app-env*",
+      "!<rootDir>/src/index*"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }
