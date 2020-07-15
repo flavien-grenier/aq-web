@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "husky": "^4.2.5",
     "is-ci": "^2.0.0",
     "is-ci-cli": "^2.1.2"
   },
@@ -56,6 +57,11 @@
         "lines": 100,
         "statements": 100
       }
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:coverage"
     }
   }
 }
