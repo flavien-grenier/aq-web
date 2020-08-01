@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "2gua.rainbow-brackets",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "mgmcdermott.vscode-language-babel",
+    "PKief.material-icon-theme",
+    "sdras.night-owl",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "GitHub.vscode-pull-request-github"
+  ]
+}

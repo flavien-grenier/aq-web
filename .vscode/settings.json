@@ -10,5 +10,6 @@
   "editor.smoothScrolling": true,
   "editor.rulers": [80],
 "workbench.colorTheme": "Night Owl",
-"editor.tabSize": 2
+"editor.tabSize": 2,
+"http.proxyStrictSSL": false
 }
