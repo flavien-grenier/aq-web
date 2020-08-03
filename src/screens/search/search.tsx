@@ -1,11 +1,13 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { Row, Col, Form, InputGroup, Button } from 'react-bootstrap'
 import './search.css'
 
 const SearchScreen = () => {
   const [cityName, setCityName] = React.useState<string>('')
+  let history = useHistory()
 
-  const search = () => console.log(`/city/${cityName}`)
+  const search = () => history.push(`/city/${cityName.toLowerCase()}`)
 
   return (
     <Row className="search_container">
